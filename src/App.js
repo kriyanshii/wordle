@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Wordle</h1>
+        <h1>Wordle</h1>
       {solution && <Wordle solution = {solution}/>}
     </div>
   );
@@ -63,5 +63,9 @@ game process:
       -- modal to say 'well done'
     -- when the user runs out of guesses
       -- modal to say 'unlucky'
+
+      Future Updates-
+      -- add modal - inspo - https://reactle.vercel.app/
+      -- add dark and light theme using react in the existing project
 
 */
