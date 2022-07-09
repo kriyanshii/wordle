@@ -19,13 +19,13 @@ function App() {
   return (
     <div className="App">
         <div className="heading"> 
-        {/*       <div><a class="click-btn btn-style500" href="#">Hover me</a></div> */}
-        <i class="word effect-2 sub-b">W</i>
-          <i class="word yellow effect-2 sub-b">O</i>
-          <i class="word effect-2 sub-b">R</i>
-          <i class="word grey effect-2 sub-b">D</i>
-          <i class="word effect-2 sub-b">L</i>
-          <i class="word effect-2 sub-b">E</i>
+        {/*       <div><a className="click-btn btn-style500" href="#">Hover me</a></div> */}
+        <i className="word effect-2 sub-b">W</i>
+          <i className="word yellow effect-2 sub-b">O</i>
+          <i className="word effect-2 sub-b">R</i>
+          <i className="word grey effect-2 sub-b">D</i>
+          <i className="word effect-2 sub-b">L</i>
+          <i className="word effect-2 sub-b">E</i>
         </div>
       {solution && <Wordle solution = {solution}/>}
     </div>
