@@ -18,7 +18,15 @@ function App() {
 
   return (
     <div className="App">
-        <h1>Wordle</h1>
+        <div className="heading"> 
+        {/*       <div><a class="click-btn btn-style500" href="#">Hover me</a></div> */}
+        <i class="word effect-2 sub-b">W</i>
+          <i class="word yellow effect-2 sub-b">O</i>
+          <i class="word effect-2 sub-b">R</i>
+          <i class="word grey effect-2 sub-b">D</i>
+          <i class="word effect-2 sub-b">L</i>
+          <i class="word effect-2 sub-b">E</i>
+        </div>
       {solution && <Wordle solution = {solution}/>}
     </div>
   );
@@ -65,7 +73,7 @@ game process:
       -- modal to say 'unlucky'
 
       Future Updates-
-      -- add modal - inspo - https://reactle.vercel.app/
+      -- add modal - inspo - https://reactle.vercel.app/ -- https://github.com/cwackerfuss/react-wordle/tree/main/src/components
       -- add dark and light theme using react in the existing project
 
 */
