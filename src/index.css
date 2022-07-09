@@ -69,7 +69,7 @@ body{
     box-sizing: content-box;
 }
 .word:before {
-    /* speak: none; */
+    /* speak: h; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
