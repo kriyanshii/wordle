@@ -3,12 +3,17 @@ import React, { useEffect, useState } from 'react'
 export default function Keypad({ usedKeys }) {
   const [letters, setLetters] = useState(null)
 
+const getData=() => {
+  fetch('https://kriyanshishah.github.io/db-json/data/letter.json')
+  .then(res => res.json())
+  .then(json => {
+    setLetters(json)
+    console.log(json)
+  })
+}
+
   useEffect(() => {
-    fetch('http://localhost:3001/letters')
-      .then(res => res.json())
-      .then(json => {
-        setLetters(json)
-      })
+    getData()
   }, [])
 
   return (
