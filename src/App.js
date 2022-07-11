@@ -6,16 +6,20 @@ import Wordle from './components/Wordle'
 function App() {
   const[solution, setSolution] = useState(null)
 
-  useEffect(() => {
-    fetch('http://localhost:3001/solutions')
+  const getData=() => {
+    fetch('https://kriyanshishah.github.io/db-json/data/solutions.json')
     .then(res => res.json())
     .then(json =>{
       // randome int between 0 to 20
       const randomSolution = json[Math.floor(Math.random() * json.length)]
       setSolution(randomSolution.word)
     })
-  }, [setSolution])
+  }
 
+  useEffect(() => {
+    getData()
+  }, [setSolution])
+  
   return (
     <div className="App">
         <div className="heading"> 
