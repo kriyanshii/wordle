@@ -4,7 +4,7 @@ export default function Keypad({ usedKeys }) {
   const [letters, setLetters] = useState(null)
 
   const getData=() => {
-    fetch('https://kriyanshishah.github.io/db-json/data/letter.json')
+    fetch('https://kriyanshii.github.io/db-json/data/letter.json')
     .then(res => res.json())
     .then(json => {
       setLetters(json)

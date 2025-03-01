@@ -7,7 +7,7 @@ function App() {
   const[solution, setSolution] = useState(null)
 
   const getData=() => {
-    fetch('https://kriyanshishah.github.io/db-json/data/solutions.json')
+    fetch('https://kriyanshii.github.io/db-json/data/solutions.json')
     .then(res => res.json())
     .then(json =>{
       // randome int between 0 to 20
